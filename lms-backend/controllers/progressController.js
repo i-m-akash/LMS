@@ -13,15 +13,3 @@ exports.getCourseProgress = async (req, res) => {
     // Logic to calculate and return the overall course progress for a user
 };```
 
-### **6. Routes**
-
-**routes/authRoutes.js**
-```javascript
-const express = require('express');
-const router = express.Router();
-const { signup, login } = require('../controllers/authController');
-
-router.post('/signup', signup);
-router.post('/login', login);
-
-module.exports = router;
